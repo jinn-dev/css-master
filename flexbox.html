@@ -7,27 +7,36 @@
   <style>
     .father {
       display: flex;
-      flex-direction: column;      /*default: row */
-      justify-content: center;  /* main axis */
-      align-items: flex-end;    /* cross axis */
+      justify-content: center;  /* <=> main-axis */
+      align-items: flex-end;    /* <=> cross-axis */
+      flex-direction: column;   /* <=> row(default) */
       height: 100vh;
     }
 
     .box {
-      width: 300px;
-      height: 300px;
+      width: 150px;
+      height: 150px;
       background-color: blue;
       /* display: inline-block; */
+      color: white;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
     }
 
+    .box:first-child {
+      align-self: flex-end; /*flex item에 영향을 주는 몇 안되는 옵션 중 하나*/
+    }
+    
   </style>
 </head>
 <body>
   <div class="father">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
   </div>
-
 </body>
 </html>
