@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .father {
+            display: grid;
+            grid-template-columns: 300px 150px;
+            grid-template-rows: 300px 150px;
+            grid-gap: 5px;
+            grid-auto-rows: 60px;
+            grid-auto-flow: row; /*정의되지 않은 element는 자동으로 row/column에 표시된다.*/
+            
+        }
+
+        .box {
+            background-color: orange;
+            color: white;
+            font-size: 2em;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+    </div>
+</body>
+</html>
