@@ -4,8 +4,78 @@ li:not(.target) {
 }
 */
 
+
 /*
 li:matches(:nth-child(even), .target) {
     background-color: blue;
 }
 */
+
+
+/*
+:root {
+    --awesomeColor: 1px solid red;
+}
+
+li:first-child a {
+    border: var(--awesomeColor);
+}
+*/
+
+
+/*
+@custom-selector :--headers h1, h2, h3, h4, h5, h6;
+
+
+:--headers {
+    color: #f19292
+}
+
+@custom-media --ipad-size (450px < width <= 850px);
+
+@media(--ipad-size) {
+    body {
+        background-color:azure;
+    }
+}
+*/
+
+/*
+h1 {
+    color: #446d83;
+}
+
+
+h1:hover { 
+    color: color-mod(#446d83 blackness(20%));
+}
+
+
+
+h2 {
+    color: gray(50);
+}
+
+h3 {
+    font-family: system-ui;
+}
+*/
+
+main {
+    background-color: skyblue;
+    & section {
+        background-color: orange;
+        width: 500px;
+        & li {
+            background-color: grey;
+            width: 250px;
+            & a {
+                color: white;
+                &:hover {
+                    font-size: 30px;
+                }
+            }
+        }
+
+    }
+}
