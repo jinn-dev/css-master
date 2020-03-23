@@ -1,0 +1,194 @@
+:root {
+    --pickColor1: #909bac;
+    --pickColor2: #bbbfca;
+    --pickColor3: #f4f4f2;
+    --pickColor4: #e8e8e8;
+    --pickColor5: #bbbbbe;
+    --pickColor6: #c3c2c2;
+
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;;
+
+}
+
+.header h1 {
+    font-size: 5em;
+    margin-top: -50px;
+}
+
+
+/* 불릿 없애기 + 들여쓰기 없애기 */
+.header .header_column ul {
+    list-style: none;
+    padding-left: 0px;  
+}
+
+.header .header_column a {
+    text-decoration: none;
+    color: black;
+}
+
+.header .header_column span {
+    color: grey;
+    text-decoration: underline;
+}
+
+.grids {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr repeat(4, 30vh);
+    grid-auto-rows: 35vh;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin: 50px;
+}
+
+.grids .grid_item {
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+    
+}
+
+.grids .grid_item .grid_main {
+    font-size: 1.5em;
+    color: color-mod(black lightness(25%));
+    text-decoration: underline;
+}
+
+.grids .grid_item .grid_header {
+    font-size: 2em;
+    font-weight: bold;
+    color: color-mod(black lightness(30%));
+}
+
+.grids .grid_item .grid_content {
+    color: color-mod(black lightness(25%));
+}
+
+.grids .grid_item .grid_footer a {
+    color: color-mod(black lightness(15%));
+    text-decoration: none;
+}
+
+.grid_footer a:hover {
+    color: color-mod(black lightness(50%));
+}
+
+.grid_item .grid_content input {
+    width: 95%;
+    height: 25px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.grid_item .grid_content .subscribe {
+    background-color: grey;
+    width: 95%;
+    height: 100px;
+    box-sizing: content-box;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.grids .grid_item:first-child {
+    grid-row: span 3;
+    background-color: var(--pickColor3);
+}
+
+.grids .grid_item:nth-child(2) {
+    grid-area: span 3 / span 4;
+    background-image: url(https://www.grahambrown.com/dw/image/v2/BBBG_PRD/on/demandware.static/-/Sites-product-master/default/dw1188b7ca/images/large/CT-080-028_2.jpg?sw=1024&sh=1024&sm=fit);
+}
+
+.grids .grid_item:nth-child(3) {
+    background-color: var(--pickColor4);
+}
+
+.grids .grid_item:nth-child(4) {
+    grid-row: span 2;
+    grid-column: span 2;
+    background-image: url(https://i.pinimg.com/564x/6f/4e/ae/6f4eae6421a677af97e489cb7bcdab75.jpg);
+}
+
+.grids .grid_item:nth-child(5) {
+    grid-column: span 2;
+    background-color: var(--pickColor1);
+}
+
+.grids .grid_item:nth-child(6) {
+    background-color: var(--pickColor5);
+}
+
+.grids .grid_item:nth-child(7) {
+    grid-column: span 2;
+    background-image: url(https://freeminimallogos.com/wp-content/uploads/2016/01/Free-Minimal-Logo-23.jpg);
+}
+
+.grids .grid_item:nth-child(8) {
+    grid-area: span 2 / span 3;
+    background-color: var(--pickColor3);
+}
+
+.grids .grid_item:nth-child(9) {
+    grid-area: span 2 / span 2;
+    background-image: url(https://i.pinimg.com/564x/71/b4/5d/71b45d321330c88ba688173272ed9e22.jpg);
+}
+
+.grids .grid_item:nth-child(10) {
+    grid-column: span 2;
+    background-color: var(--pickColor2);
+}
+
+.grids .grid_item:nth-child(10) {
+    grid-column: span 3;
+    grid-row: span 2;
+    background-image: url(https://i.etsystatic.com/14972458/r/il/4c28ab/1793157754/il_794xN.1793157754_4y7b.jpg);
+}
+
+.grids .grid_item:nth-child(11) {
+    grid-column: span 2;
+    background-image: url(https://static1.squarespace.com/static/5a1fd8276f4ca3112988c8de/5a2148d0c8302566a3bed1b1/5beef3aa6d2a73cebeded8ef/1542387246070/orange_furniture_1.jpg?format=1500w);
+}
+
+.grids .grid_item:nth-child(12) {
+    grid-column: span 2;
+    background-image: url(https://epok.kr/web/product/big/201910/ab2e4fda5c4731718e1e56c3e0778dd2.jpg);
+}
+
+.grids .grid_item:nth-child(13) {
+    grid-area: span 2 / span 3;
+    background-color: var(--pickColor1);
+}
+
+.grids .grid_item:nth-child(14) {
+    grid-area: span 1 / span 2;
+    background-image: url(https://i.pinimg.com/564x/e5/f3/7c/e5f37cd7c86d878cef2481084088e444.jpg);
+}
+
+.grids .grid_item:nth-child(15) {
+    grid-area: span 1 / span 2;
+    background-color: var(--pickColor4);
+}
+/*
+.footer_column:first-child {
+    margin-left: 50px;
+}
+
+.footer_column {
+    margin-top: 50px;  
+}
+*/

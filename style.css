@@ -61,6 +61,7 @@ h3 {
 }
 */
 
+/*
 main {
     background-color: skyblue;
     & section {
@@ -79,3 +80,28 @@ main {
 
     }
 }
+*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 200px;
+    font-family: consolas;
+    font-size: 2em;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    color: color-mod(black blackness(100%));
+    text-decoration: none;
+    padding-bottom: 30px;
+}
+
+a:hover {
+    color: color-mod(black blackness(30%))
+}
+
+
