@@ -13,18 +13,16 @@ body {
     "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;;
-
-}
-
 .header h1 {
     font-size: 5em;
-    margin-top: -50px;
+    margin-top: -25px;
 }
 
+ .header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
 
 /* 불릿 없애기 + 들여쓰기 없애기 */
 .header .header_column ul {
@@ -37,7 +35,7 @@ body {
     color: black;
 }
 
-.header .header_column span {
+.header .header_column .header_column_h1 {
     color: grey;
     text-decoration: underline;
 }
@@ -56,8 +54,10 @@ body {
     background-position: center center;
     background-size: cover;
     padding: 30px;
-    
+    display: flex;
+    flex-direction: column;
 }
+
 
 .grids .grid_item .grid_main {
     font-size: 1.5em;
@@ -73,14 +73,23 @@ body {
 
 .grids .grid_item .grid_content {
     color: color-mod(black lightness(25%));
+    -webkit-flex: 1;
+    flex: 1;
+    overflow : hidden;
+}
+
+.grids .grid_item .grid_footer {
+    align-self: flex-start;
+    
 }
 
 .grids .grid_item .grid_footer a {
     color: color-mod(black lightness(15%));
     text-decoration: none;
+    
 }
 
-.grid_footer a:hover {
+.grids .grid_item .grid_footer a:hover {
     color: color-mod(black lightness(50%));
 }
 
@@ -92,17 +101,20 @@ body {
     margin-bottom: 10px;
 }
 
+
 .grid_item .grid_content .subscribe {
     background-color: grey;
     width: 95%;
     height: 100px;
-    box-sizing: content-box;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 2em;
+    color: azure;
     font-weight: 600;
 }
+
 
 .grids .grid_item:first-child {
     grid-row: span 3;

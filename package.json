@@ -15,7 +15,7 @@
   },
   "homepage": "https://github.com/jinn-dev/css-master#readme",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel meal-app/index.html"
   },
   "dependencies": {
     "postcss-grid-kiss": "^2.3.0",
