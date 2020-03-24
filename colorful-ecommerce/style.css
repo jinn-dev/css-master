@@ -5,6 +5,9 @@
     --pickColor4: #e8e8e8;
     --pickColor5: #bbbbbe;
     --pickColor6: #c3c2c2;
+    --pickColor7: #636b79;
+    --pickColor8: #474d57;
+    --pickColor9: #474c55;
 
 }
 
@@ -61,18 +64,18 @@ body {
 
 .grids .grid_item .grid_main {
     font-size: 1.5em;
-    color: color-mod(black lightness(25%));
+    color: var(--pickColor7);
     text-decoration: underline;
 }
 
 .grids .grid_item .grid_header {
     font-size: 2em;
     font-weight: bold;
-    color: color-mod(black lightness(30%));
+    color: var(--pickColor8);
 }
 
 .grids .grid_item .grid_content {
-    color: color-mod(black lightness(25%));
+    color: var(--pickColor9);
     -webkit-flex: 1;
     flex: 1;
     overflow : hidden;
@@ -84,13 +87,13 @@ body {
 }
 
 .grids .grid_item .grid_footer a {
-    color: color-mod(black lightness(15%));
+    color: black;
     text-decoration: none;
     
 }
 
 .grids .grid_item .grid_footer a:hover {
-    color: color-mod(black lightness(50%));
+    color: grey;
 }
 
 .grid_item .grid_content input {
