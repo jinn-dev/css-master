@@ -110,7 +110,6 @@ ul {
 
 
 .featured .featured__wrapper .featured-meal .featured-meal__btn {
-
     width: 30px;
     height: 30px;
 }
@@ -189,4 +188,13 @@ ul {
 .footer__list .menu .menu__icon {
     text-align: center;
     cursor: pointer; /* 해당 태그 위에 위치하는 마우스 커서 모양 바꾸기 */
+    opacity: 0.5;
+}
+
+.footer__list .menu .menu__icon:hover {
+    opacity: 1.0;
+}
+
+.footer__list .menu .menu__text {
+    font-weight: 600;
 }

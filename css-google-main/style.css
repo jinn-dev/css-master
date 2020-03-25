@@ -33,8 +33,8 @@ input:focus { outline: none; }
 input.form-control {
     border: 1px solid grey;
     border-radius: 15px;
-    width: 500px;
-    height: 30px;
+    width: 1fr;
+    height: 1fr;
 }
 
 input::-webkit-input-placeholder {
