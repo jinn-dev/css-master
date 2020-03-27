@@ -8,4 +8,7 @@
 [Practice #3 meal-app](https://jinn-dev.github.io/css-master/meal-app/)
 
 
-[Practice #4 news-app](https://jinn-dev.github.io/css-master/news-app/)
+[Practice #4-1 news-app](https://jinn-dev.github.io/css-master/news-app/)
+
+
+[Practice #4-2 news-app](https://jinn-dev.github.io/css-master/news-app/vibe/)
