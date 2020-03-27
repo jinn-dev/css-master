@@ -26,20 +26,30 @@ ul {
 }
 
 .header {
-    padding: 10px 0 0 10px;
-    margin: 0 0 10px 10px;
+    padding: 10px 10px 5px 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
+
 .section {
-    padding: 0 0 0 10px;
+    padding: 0 10px 0 10px;
     margin: 0 0 10px 10px;
     
     border-top: 1px solid #d9d9da; 
 }
 
+.header__title {
+    font-size: 2em;
+}
 
-.section__subtitle {
-    font-weight: 300;
+.section__subtitle .header__subtitle {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.header__next__icon {
+    padding: 30px 10px 0 0;
 }
 
 /****************** featured area ******************/
@@ -84,6 +94,7 @@ ul {
     padding: 15px;
     justify-content: flex-start;
     overflow: auto;
+    padding: 0 10px 10px 0;
 }
 
 .writers__writer {
@@ -133,6 +144,7 @@ ul {
     justify-content: flex-start;
     margin-top: 10px;
     overflow: auto;
+    padding: 0 10px 10px 0;
 }
 
 .newinfos__info {
@@ -168,4 +180,70 @@ ul {
     color: var(--pickColor2);
     word-break: break-all;
     text-overflow: ellipsis;
+}
+
+
+/****************** easy-to-read area ******************/
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.grid .grid__item-hero {
+    grid-column: span 2;
+    border-radius: 15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+        url("https://i.pinimg.com/564x/64/79/36/6479368d625b50ed5983514ce873cb94.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-color: var(--hiddenColor);
+    color: var(--pickColor3);
+    margin-left: 18px;
+    margin-right: 18px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.item-hero__title {
+    align-self: flex-end;
+    margin-right: 15px;
+    font-size: 2em;
+}
+
+.item-hero__subtitle {
+    align-self: flex-start;
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 300;
+} 
+
+.grid-item {
+    padding-top: 10px;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.grid-item .grid-item__photo {
+    max-width: 100%;
+    border-radius: 10%;
+
+}
+
+
+.grid-item__title {
+    font-size: 1em;
+    margin-block-start: auto;
+    margin-block-end: auto;
+    
+}
+.grid-item__subtitle {
+    padding: -10px 0 0 0;
+    font-weight: 300;
+    font-size: 15px;
+    
 }
