@@ -6,7 +6,7 @@
 [Practice #3 meal-app](https://jinn-dev.github.io/css-master/meal-app/)
 <br><br>
 [Practice #4-1 news-app](https://jinn-dev.github.io/css-master/news-app/)    
-<br><br>  
+<br><br>
 [Practice #4-2 news-app](https://jinn-dev.github.io/css-master/news-app/vibe/)
 <br><br>
-[Practice #5 news-app](https://jinn-dev.github.io/css-master/recipe-app/)
+[Practice #5 recipe-app](https://jinn-dev.github.io/css-master/recipe-app/)
