@@ -14,3 +14,6 @@
 [Practice #5 recipe-app](https://jinn-dev.github.io/css-master/recipe-app/)
 ![127.0.0.1_1234_(iPhone X)](/assets/images//127.0.0.1_1234_(iPhone%20X).png)
 <br>
+[Practice #6 network-app](https://jinn-dev.github.io/css-master/network-app/)      
+![localhost_1234_(iPhone X) (1)](/assets/images//localhost_1234_(iPhone%20X)%20(1).png)
+<br>
