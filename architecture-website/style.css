@@ -1,5 +1,3 @@
-@custom-media --min-size (width <= 900px);
-
 :root {
     --backColor1: #e6e9ef;
     --backColor2: #f4f4f5;
@@ -32,7 +30,7 @@ ul {
     box-shadow: var(--boxShadow);
 }
 
-@media(--min-size) {
+@media screen and (max-width: 768px) {
     .wrap {
         margin: 50px 25px 0 25px;
         padding-top: 25px;
@@ -46,7 +44,7 @@ ul {
     padding-bottom: 10px;
 }
 
-@media(--min-size) {
+@media screen and (max-width: 768px)  {
     .header {
         padding-left: 25px;
         padding-bottom: 10px;
@@ -81,7 +79,7 @@ ul {
   padding-bottom: 30px;
 }
 
-@media(--min-size) {
+@media screen and (max-width: 768px)  {
     .portpolio {
         column-gap: 10px;
         grid-template-columns: repeat(5, minmax(150px, 1fr));
@@ -160,7 +158,7 @@ ul {
     padding-left: 26px;
 }
 
-@media(--min-size) {
+@media screen and (max-width: 768px)  {
     .navigation .navigation__list {
         display: grid;
         grid-auto-flow: row;
