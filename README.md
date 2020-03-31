@@ -17,6 +17,6 @@
 [Practice #6 network-app](https://jinn-dev.github.io/css-master/network-app/)      
 ![localhost_1234_(iPhone X) (1)](/assets/images//localhost_1234_(iPhone%20X)%20(1).png)
 <br><br>
-[Practice #7 architecture-website](https://jinn-dev.github.io/css-master/architecture-website/)
+[Practice #7 architecture-website](https://jinn-dev.github.io/css-master/architecture-website/)         
 ![주석 2020-04-01 025407](/assets/images//주석%202020-04-01%20025407.png)
 <br><br>
