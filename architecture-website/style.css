@@ -1,0 +1,188 @@
+@custom-media --min-size (width <= 900px);
+
+:root {
+    --backColor1: #e6e9ef;
+    --backColor2: #f4f4f5;
+    --backColor3: #fafaf6;
+    --backColor4: #8c8d91;
+    --boxShadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: var(--backColor1);
+}
+
+
+h1, h2, h3, h4, h5, h6, html, body {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.wrap {
+    background-color: var(--backColor2);
+    margin: 50px 100px 0 100px;
+    padding-top: 25px;
+    box-shadow: var(--boxShadow);
+}
+
+@media(--min-size) {
+    .wrap {
+        margin: 50px 25px 0 25px;
+        padding-top: 25px;
+    }
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding-left: 45px;
+    padding-bottom: 10px;
+}
+
+@media(--min-size) {
+    .header {
+        padding-left: 25px;
+        padding-bottom: 10px;
+    }
+}
+
+.header .header__title {
+    padding-left: 10px;
+    font-weight: 300;
+    font-size: 1.6em;
+}
+
+.header .header__title span:first-child {
+    font-weight: 600;
+}
+
+.header .header__menu-icon svg {
+    width: 35px;
+    height: 35px;
+}
+
+.portpolio {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 30px;
+  grid-template-columns: repeat(5, minmax(250px, 1fr));
+  grid-auto-columns: repeat(5, minmax(250px, 1fr));
+  grid-template-rows: 350px;
+  overflow: auto;
+  padding-left: 75px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+@media(--min-size) {
+    .portpolio {
+        column-gap: 10px;
+        grid-template-columns: repeat(5, minmax(150px, 1fr));
+        grid-auto-columns: repeat(5, minmax(150px, 1fr));
+        padding-left: 25px;
+    }
+}
+
+
+.portpolio__item {
+    background-size: cover; /* 이미지가 요소보다 크면 비율 유지하면서 작게 조정 <-> contain */
+    background-position: center center;
+    box-shadow: var(--boxShadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.portpolio__item .item__info {
+    padding: 2px;
+    text-align: center;
+}
+
+.portpolio__item .item__info .item__title {
+    font-weight: 550;
+}
+
+.portpolio__item .item__info .item__subtitle {
+    font-weight: 450;
+}
+
+.portpolio__item:nth-child(1) {
+    background-image: url(https://i.pinimg.com/564x/09/fe/09/09fe099ea1f4faf70ea66ad979827bce.jpg);
+}
+
+
+.portpolio__item:nth-child(2) {
+    background-image: url(https://i.pinimg.com/564x/14/ce/06/14ce06b5d74354a68bbacc4afdc300c3.jpg);
+}
+
+
+.portpolio__item:nth-child(3) {
+    background-image: url(https://i.pinimg.com/564x/13/b9/f3/13b9f3517ec263cba0ffdf405638f464.jpg);
+}
+
+.portpolio__item:nth-child(4) {
+    background-image: url(https://i.pinimg.com/564x/d0/a5/93/d0a593a07920b32540a7fc6d9c2a9dae.jpg);
+}
+
+.portpolio__item:nth-child(5) {
+    background-image: url(https://i.pinimg.com/564x/46/71/66/46716622b1c588d4a49c1b69bcde8bee.jpg);
+}
+
+.portpolio__item .item__info {
+
+    background-color: white;
+    
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+}
+
+.navigation .navigation__list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-auto-columns: repeat(auto-fit, 1fr);
+    grid-auto-rows: repeat(auto-fit, 1fr);
+    column-gap: 30px;
+    font-weight: 300;
+    padding-left: 26px;
+}
+
+@media(--min-size) {
+    .navigation .navigation__list {
+        display: grid;
+        grid-auto-flow: row;
+        font-size: 12px;
+        row-gap: 5px;
+    }
+}
+
+.navigation .navigation__list .navigation__item:hover {
+    font-weight: 450;
+    border-bottom: 1px solid #d9d9da; 
+}
+
+.navigation .navigation__icons {
+    align-self: center;
+    padding-right: 30px;
+}
+
+.navigation .navigation__icons svg {
+    fill: var(--backColor4);
+}
+
+.navigation .navigation__icons svg:hover {
+    fill: black;
+}
