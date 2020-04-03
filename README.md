@@ -26,3 +26,6 @@
 [Practice #9 artistic-portfolio-website](https://jinn-dev.github.io/css-master/artistic-portfolio-website/)              
 ![주석 2020-04-03 021448](/assets/images//주석%202020-04-03%20021448.png)
 <br><br>
+[Practice #10 collection-website](https://jinn-dev.github.io/css-master/collection-website/)              
+![주석 2020-04-03 134424](/assets/images//주석%202020-04-03%20134424.png)
+<br><br>
